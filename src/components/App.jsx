@@ -8,10 +8,15 @@ function Question(props) {
   return <div>{props.text}</div>
 }
 
+function NextQuestion(props) {
+  return  <button type="button">Next Question</button> 
+}
+
 function App() {
   return <div className="app">
     Trivia!
     <Question text={data[questionNumber].question.text} />
+    <NextQuestion />
   </div>;
 }
 
